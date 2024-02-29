@@ -1,0 +1,11 @@
+<header>
+  <h1>TodoList <span>lite</span></h1>
+</header>
+<main >
+  <section>
+    <app-list [listaDeTareas]="listaDeTareas"></app-list>
+    <app-formulario (agregarTarea)="agregarTareas($event)"></app-formulario>
+  </section>
+
+</main>
+

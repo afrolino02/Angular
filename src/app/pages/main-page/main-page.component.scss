@@ -1,0 +1,88 @@
+@use '../../../scss/variables' as v;
+
+app-list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+header{
+  text-align: center;
+  background-color: v.$colorAzul;
+  color: v.$colorBlanco;
+  padding: 1rem;
+}
+main {
+  background-color: #2a3e5d;
+  width: 100%;
+  height: 100vb;
+  padding:   3rem 0rem;
+  display: flex;
+  flex-wrap: wrap;
+   flex-direction: row;
+   justify-content: center;
+   align-content: center;
+
+}
+section {
+   width: 100%;
+   height: 100vh;
+  background-color: #fff;
+   margin: auto 2rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-direction: column;
+   align-content: center;
+   box-shadow: -3px 10px 35px 0px rgba(0,0,0,0.75);
+   -webkit-box-shadow: -3px 10px 35px 0px rgba(0,0,0,0.75);
+   -moz-box-shadow: -3px 10px 35px 0px rgba(0,0,0,0.75);
+   border-radius: 4rem;
+   gap: 3rem;
+}
+.checkbox {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  transition-property: border-color;
+
+}
+.checkbox[type="checkbox"] {
+  cursor: pointer;
+  background-color: #fff;
+  background-repeat: none;
+  width: 2rem;
+  height: 2rem;
+  appearance: none;
+  border: 2px solid #888;
+  border-radius: 5rem;
+
+}
+
+.checkbox:checked[type="checkbox"] {
+  background-color: green;
+  border-color: green;
+  background-image: url("../../../done_FILL0_wght400_GRAD0_opsz24.svg");
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: border-color opacity ease-out 2s;
+
+}
+
+.checkbox[type="checkbox"] {
+  transition: border-color opacity ease-out 2s;
+}
+label{
+  color: green;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
